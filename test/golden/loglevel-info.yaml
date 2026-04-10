@@ -1,0 +1,5 @@
+connector:
+  logLevel: "info"
+  network: "test-tenant"
+  accessToken: "ACCESS_TOKEN"
+  refreshToken: "REFRESH_TOKEN"

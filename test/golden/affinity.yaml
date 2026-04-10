@@ -1,0 +1,22 @@
+affinity:
+  podAntiAffinity:
+    preferredDuringSchedulingIgnoredDuringExecution:
+      - podAffinityTerm:
+          labelSelector:
+            matchExpressions:
+              - key: app.kubernetes.io/name
+                operator: In
+                values:
+                  - twingate
+          topologyKey: kubernetes.io/hostname
+        weight: 100
+
+env: {}
+
+icmpSupport:
+  enabled: false
+
+connector:
+  network: "test-tenant"
+  accessToken: "ACCESS_TOKEN"
+  refreshToken: "REFRESH_TOKEN"

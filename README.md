@@ -1,17 +1,11 @@
-# Telematique Helm Charts
+# Twingate Helm Charts
 
-Helm charts for my self-hosted projects
+## How to use the repo
 
-### Usage
+1. Place your chart into `stable` folder
 
-Helm is required to use and operate these charts. You can add the Telematique Helm Repository like below:
+2. Add repo to your helm as:
 
+```shell
+helm repo add twingate https://twingate.github.io/helm-charts
 ```
-helm repo add telematique https://telematiq.github.io/charts
-```
-
-Documentation and the default values.yaml can be found in relevant chart repository
-
-### Contributing
-
-If you want to contribute to our charts, please read the Guidelines in the relevant repository.

@@ -1,0 +1,30 @@
+image:
+  repository: twingate/connector
+  tag: 1
+  pullPolicy: Always
+  imagePullSecrets: []
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 200Mi
+
+additionalLabels: {}
+
+podAnnotations: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+env: {}
+
+icmpSupport:
+  enabled: false
+
+connector:
+  network: "test-tenant"
+  accessToken: "ACCESS_TOKEN"
+  refreshToken: "REFRESH_TOKEN"
